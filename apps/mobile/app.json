@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "youtube",
-    "slug": "youtube",
+    "name": "Video App",
+    "slug": "video-app",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -13,16 +13,13 @@
     },
     "assetBundlePatterns": ["**/*"],
     "ios": {
-      "supportsTablet": true,
-      "bundleIdentifier": "com.yourname.videoapp"
+      "supportsTablet": true
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#FFFFFF"
-      },
-      "package": "com.yourname.videoapp",
-      "versionCode": 1
+      }
     },
     "web": {
       "favicon": "./assets/favicon.png",
@@ -31,9 +28,6 @@
     "plugins": [
       "expo-router"
     ],
-    "scheme": "videoapp",
-    "experiments": {
-      "typedRoutes": false
-    }
+    "scheme": "videoapp"
   }
 }
