@@ -4,10 +4,10 @@
     "slug": "youtube",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./apps/mobile/assets/icon.png",
+    "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
     "splash": {
-      "image": "./apps/mobile/assets/splash.png",
+      "image": "./assets/splash.png",
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
@@ -18,26 +18,22 @@
     },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./apps/mobile/assets/adaptive-icon.png",
+        "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#FFFFFF"
       },
       "package": "com.yourname.videoapp",
       "versionCode": 1
     },
     "web": {
-      "favicon": "./apps/mobile/assets/favicon.png"
+      "favicon": "./assets/favicon.png",
+      "bundler": "metro"
     },
     "plugins": [
-      "expo-router",
-      [
-        "expo-image-picker",
-        {
-          "photosPermission": "Allow $(PRODUCT_NAME) to access your photos.",
-          "cameraPermission": "Allow $(PRODUCT_NAME) to access your camera."
-        }
-      ]
+      "expo-router"
     ],
     "scheme": "videoapp",
-    "sdkVersion": "50.0.0"
+    "experiments": {
+      "typedRoutes": false
+    }
   }
 }
