@@ -1,5 +1,5 @@
 {
-  "name": "video-app",
+  "name": "youtube",
   "version": "1.0.0",
   "main": "apps/mobile/index.js",
   "scripts": {
